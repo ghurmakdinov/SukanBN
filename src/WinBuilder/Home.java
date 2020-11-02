@@ -84,8 +84,8 @@ public class Home extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 
-		JLabel lblNewLabel_1 = new JLabel("New label");
-		lblNewLabel_1.addMouseListener(new MouseAdapter() {
+		JLabel labelSukanBN = new JLabel("New label");
+		labelSukanBN.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e) {
 				
@@ -94,7 +94,7 @@ public class Home extends JFrame {
 
 			}
 		});
-		lblNewLabel_1.addMouseMotionListener(new MouseMotionAdapter() {
+		labelSukanBN.addMouseMotionListener(new MouseMotionAdapter() {
 			@Override
 			public void mouseDragged(MouseEvent arg0) {
 				
@@ -104,10 +104,10 @@ public class Home extends JFrame {
 
 			}
 		});
-		lblNewLabel_1.setBounds(-12, 0, 524, 490);
-		lblNewLabel_1.setVerticalAlignment(SwingConstants.TOP);
-		panel.add(lblNewLabel_1);
-		lblNewLabel_1.setIcon(new ImageIcon(Home.class.getResource("/resources/Asset 1.png")));
+		labelSukanBN.setBounds(-12, 0, 524, 490);
+		labelSukanBN.setVerticalAlignment(SwingConstants.TOP);
+		panel.add(labelSukanBN);
+		labelSukanBN.setIcon(new ImageIcon(Home.class.getResource("/resources/Asset 1.png")));
 
 		JButton btnSignUp = new JButton("Sign Up");
 		btnSignUp.setFont(new Font("SUNDAY Personal use", Font.PLAIN, 16));
@@ -117,7 +117,7 @@ public class Home extends JFrame {
 		});
 		btnSignUp.setBackground(new Color(241, 57, 83));
 		btnSignUp.setForeground(new Color(0, 0, 0));
-		btnSignUp.setBounds(377, 348, 289, 27);
+		btnSignUp.setBounds(377, 348, 99, 27);
 		contentPane.add(btnSignUp);
 
 		textUserName = new JTextField();
@@ -171,5 +171,18 @@ public class Home extends JFrame {
 		passwordField_1 = new JPasswordField();
 		passwordField_1.setBounds(377, 290, 289, 31);
 		contentPane.add(passwordField_1);
+		
+		JButton btnLogIn = new JButton("Log In");
+		btnLogIn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				UserLogin login = new UserLogin();
+				login.loginPage();
+			}
+		});
+		btnLogIn.setForeground(Color.BLACK);
+		btnLogIn.setFont(new Font("SUNDAY Personal use", Font.PLAIN, 16));
+		btnLogIn.setBackground(new Color(0, 255, 127));
+		btnLogIn.setBounds(567, 348, 99, 27);
+		contentPane.add(btnLogIn);
 	}
 }
