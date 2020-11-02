@@ -1,6 +1,5 @@
 package WinBuilder;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -14,9 +13,7 @@ import java.awt.Color;
 import java.awt.Font;
 import javax.swing.ImageIcon;
 import javax.swing.JTextField;
-import javax.swing.JSeparator;
 import javax.swing.JLabel;
-import javax.swing.JToolBar;
 import javax.swing.SwingConstants;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -163,8 +160,8 @@ public class Home extends JFrame {
 		});
 		lbl_close.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		lbl_close.setForeground(new Color(241, 57, 83));
-		lbl_close.setHorizontalAlignment(SwingConstants.RIGHT);
-		lbl_close.setBounds(648, 11, 46, 14);
+		lbl_close.setHorizontalAlignment(SwingConstants.CENTER);
+		lbl_close.setBounds(658, 11, 46, 14);
 		contentPane.add(lbl_close);
 		
 		passwordField = new JPasswordField();
