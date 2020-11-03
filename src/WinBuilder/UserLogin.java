@@ -31,7 +31,7 @@ public class UserLogin {
 	/**
 	 * Launch the application.
 	 */
-	public static void loginPage() {
+	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -94,6 +94,8 @@ public class UserLogin {
 		btnSignUp.setFont(new Font("SUNDAY Personal use", Font.PLAIN,16));
 		btnSignUp.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				Home home = new Home();
+				home.Home();
 			}
 		});
 		btnSignUp.setBackground(new Color(241, 57, 83));

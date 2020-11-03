@@ -33,7 +33,7 @@ public class Home extends JFrame {
 	/**
 	 * Launch the application.
 	 */
-	public static void main(String[] args) {
+	public static void Home() {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -176,7 +176,7 @@ public class Home extends JFrame {
 		btnLogIn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				UserLogin login = new UserLogin();
-				login.loginPage();
+				login.main(null);
 			}
 		});
 		btnLogIn.setForeground(Color.BLACK);
